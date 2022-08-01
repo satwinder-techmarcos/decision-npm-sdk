@@ -1,0 +1,25 @@
+{
+  "name": "@satwinder-techmarcos/decision-sdk",
+  "version": "1.0.1",
+  "description": "A wrapper to handle the Decision APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satwinder-techmarcos/decision-npm-sdk.git"
+  },
+  "keywords": [
+    "Decision"
+  ],
+  "author": "Techmarcos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satwinder-techmarcos/decision-npm-sdk/issues"
+  },
+  "homepage": "https://github.com/satwinder-techmarcos/decision-npm-sdk#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}

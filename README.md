@@ -5,26 +5,29 @@ It is a simple node js package
 ## Installation
 npm i @satwinder-techmarcos/decision-sdk
 
-## dependencies
+## Dependencies
  - axios - 0.27.2
 
 ## How to use
 
-const Decisions = require("@satwinder-techmarcos/decision-sdk");
 
-const options = {
-  baseUrl: "a valid base url", //https://devserver.avyst.com/Primary/restapi/Flow/
-  email: "email@example.com",
-  password: "password",
-};
-const decision = new Decisions(options);
 
-//Get All Pages
-decision
-  .getAll("5caecb67-0e33-11ed-8158-000d3a3ebe5711") // get your end point form (https://documentation.decisions.com/v7/docs/api-and-authentication)
-  .then((pages) => {
-    console.log(pages);
-  })
-  .catch((err) => {
-    console.error(err);
-  });
+    const Decisions = require("@satwinder-techmarcos/decision-sdk");
+    
+    const options = {
+        baseUrl: "a valid base url here",
+        email: "email@example.com",
+        password: "password here",
+    };
+    
+    const decision = new Decisions(options);
+    
+    //Get All Pages
+    decision
+       .getAll("flow/api end point") // get your end point form (https://documentation.decisions.com/v7/docs/api-and-authentication)
+       .then((pages) => {
+          console.log(pages);
+      })
+       .catch((err) => {
+           console.error(err);
+      });
